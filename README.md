@@ -1,9 +1,9 @@
 # OrgBad-Site
 
-Public pages of the OrgBad app, served by GitHub Pages from `main` / root.
+Public pages of the OrgBad app, served by GitHub Pages from `main` / `docs` (plain HTML, `.nojekyll`).
 
 - Privacy policy: https://jordanbenavent.github.io/OrgBad-Site/
 - Account deletion: https://jordanbenavent.github.io/OrgBad-Site/#suppression
 
-Both links are the ones given to the Play Store. The page is a single file, [index.html](index.html):
+Both links are the ones given to the Play Store. The page is a single file, [docs/index.html](docs/index.html):
 update its "mis à jour le" date when the content changes.
