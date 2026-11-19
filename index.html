@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OrgBad · Confidentialité</title>
+  <meta name="description" content="Politique de confidentialité de l’application OrgBad, et comment supprimer son compte.">
+  <style>
+    :root {
+      --bg: #F6F4EE;
+      --card: #FFFFFF;
+      --text: #1F2B4D;
+      --muted: #5B6478;
+      --accent: #B8862B;
+      --border: #E2DED3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11182B;
+        --card: #1A2340;
+        --text: #EEF0F6;
+        --muted: #A9B0C2;
+        --accent: #E2B45A;
+        --border: #2B3557;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { margin-bottom: 24px; }
+    .brand { font-weight: 800; font-size: 28px; letter-spacing: -0.02em; margin: 0; }
+    .brand span { color: var(--accent); }
+    .updated { color: var(--muted); margin: 4px 0 0; font-size: 14px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+    nav a {
+      color: var(--text); text-decoration: none; font-size: 14px; font-weight: 600;
+      border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; background: var(--card);
+    }
+    section {
+      background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+      padding: 24px; margin-top: 16px;
+    }
+    h2 { font-size: 22px; margin: 0 0 8px; letter-spacing: -0.01em; }
+    h3 { font-size: 17px; margin: 24px 0 4px; }
+    p, li { margin: 6px 0; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    .callout {
+      border-left: 4px solid var(--accent); padding: 8px 14px; margin: 12px 0;
+      background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 0 8px 8px 0;
+    }
+    .muted { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">Org<span>Bad</span></p>
+    <p class="updated">Organisation des créneaux de badminton d’un club · mis à jour le 19 novembre 2026</p>
+    <nav>
+      <a href="#confidentialite">Confidentialité</a>
+      <a href="#suppression">Supprimer mon compte</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="confidentialite">
+    <h2>Politique de confidentialité</h2>
+    <p>OrgBad sert à organiser les créneaux d’un club de badminton : saisons, groupes, créneaux, inscriptions et liste d’attente. Cette page explique quelles données l’application utilise, pourquoi, et comment les effacer.</p>
+    <div class="callout">En bref : seulement ce qu’il faut pour organiser les créneaux de ton club. Pas de publicité, pas de statistiques d’usage, pas de revente de données, pas de géolocalisation du téléphone.</div>
+
+    <h3>Les données que nous conservons</h3>
+    <ul>
+      <li><strong>Ton compte</strong> : adresse email, mot de passe (stocké chiffré, jamais lisible) et nom affiché.</li>
+      <li><strong>Ta vie de club</strong> : les clubs et saisons que tu as rejoints, tes groupes, tes rôles de responsable ou d’administrateur, tes demandes d’adhésion.</li>
+      <li><strong>Tes réponses</strong> aux créneaux : inscrit, absent ou en liste d’attente.</li>
+      <li><strong>Ce que tu crées</strong> si tu es responsable : créneaux et séries (titre, horaires, lieu, nombre de places), groupes.</li>
+      <li><strong>Les notifications</strong> : l’identifiant de notification de ton téléphone, les notifications envoyées et tes réglages de notifications.</li>
+    </ul>
+
+    <h3>Pourquoi</h3>
+    <p>Uniquement pour faire fonctionner l’application : te connecter, afficher les créneaux de tes groupes, gérer les inscriptions et la liste d’attente, et te prévenir (place libérée, créneau annulé, nouveau créneau, demande d’adhésion). La base légale est l’exécution du service que tu demandes en créant un compte.</p>
+
+    <h3>Qui voit quoi</h3>
+    <ul>
+      <li>Ton <strong>nom affiché</strong> est visible des autres utilisateurs de l’application, notamment dans les listes d’inscrits et de membres de ton club.</li>
+      <li>Tes <strong>réponses à un créneau</strong> sont visibles des joueurs qui peuvent y participer et des responsables du club.</li>
+      <li>Ton <strong>adresse email</strong> n’est montrée à personne dans l’application.</li>
+    </ul>
+
+    <h3>Services utilisés</h3>
+    <ul>
+      <li><strong>Supabase</strong> : hébergement de la base de données et des comptes.</li>
+      <li><strong>Expo</strong> et <strong>Google Firebase Cloud Messaging</strong> : acheminement des notifications vers ton téléphone (identifiant de notification, titre et texte de la notification).</li>
+      <li><strong>IGN – Géoplateforme</strong> : quand un responsable tape le lieu d’un créneau, le texte saisi est envoyé pour proposer des adresses et afficher une petite carte. Aucune donnée sur toi n’est transmise.</li>
+      <li><strong>Ministère de l’Éducation nationale (data.education.gouv.fr)</strong> : récupération du calendrier des vacances scolaires pour les séries de créneaux. Seule la zone scolaire du club est transmise.</li>
+    </ul>
+    <p>Aucune de ces données n’est vendue ni utilisée à des fins publicitaires.</p>
+
+    <h3>Durée de conservation</h3>
+    <p>Tes données sont conservées tant que ton compte existe. Quand tu supprimes ton compte, elles sont effacées immédiatement. Les créneaux que tu as créés restent visibles pour ton club, sans mention de leur auteur.</p>
+
+    <h3>Tes droits</h3>
+    <p>Tu peux à tout moment accéder à tes données, les corriger (ton nom se modifie dans l’application), les effacer, ou t’opposer à leur traitement en supprimant ton compte. Pour toute demande, écris à l’adresse de <a href="#contact">contact</a>. Si tu estimes que tes droits ne sont pas respectés, tu peux saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+    <h3>Mineurs</h3>
+    <p>Pour un joueur de moins de 15 ans, le compte doit être créé avec l’accord d’un parent.</p>
+  </section>
+
+  <section id="suppression">
+    <h2>Supprimer mon compte</h2>
+    <h3>Depuis l’application</h3>
+    <ol>
+      <li>Ouvre l’onglet <strong>Profil</strong>.</li>
+      <li>Tout en bas, touche <strong>Supprimer mon compte</strong>.</li>
+      <li>Saisis ton mot de passe, puis confirme.</li>
+    </ol>
+    <h3>Sans l’application</h3>
+    <p>Écris à <a href="mailto:orgbad.app@gmail.com?subject=Suppression%20de%20mon%20compte%20OrgBad">orgbad.app@gmail.com</a> depuis l’adresse email de ton compte, avec pour objet « Suppression de mon compte ». Il est supprimé sous 30 jours au plus, et tu reçois une confirmation.</p>
+    <h3>Ce qui est effacé</h3>
+    <ul>
+      <li>Ton compte : email, mot de passe et nom affiché.</li>
+      <li>Tes inscriptions aux clubs, saisons et groupes, et tes rôles de responsable.</li>
+      <li>Tes réponses aux créneaux (passées et à venir) : tes places à venir sont libérées pour la liste d’attente.</li>
+      <li>Tes demandes d’adhésion, tes notifications, tes réglages et l’identifiant de notification de tes téléphones.</li>
+    </ul>
+    <p>Les créneaux et séries que tu as créés restent en place pour ton club, sans mention de leur auteur. Rien d’autre n’est conservé.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute question sur l’application ou sur tes données : <a href="mailto:orgbad.app@gmail.com">orgbad.app@gmail.com</a></p>
+    <p class="muted">OrgBad est une application indépendante, développée pour l’organisation des clubs de badminton.</p>
+  </section>
+</main>
+</body>
+</html>
